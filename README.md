@@ -8,6 +8,10 @@ In the project directory, you can run:
 
 ### `npm start`
 
+<a href="#">
+                        <img height="216" width="345" alt="reuse component" src="reuse.png"/>
+                  </a>
+
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
