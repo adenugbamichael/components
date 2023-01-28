@@ -1,52 +1,29 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 import { faker } from "@faker-js/faker"
+import CommentDetail from "./CommentDetails"
 
 const App = () => {
   return (
     <div className='ui container comments'>
-      <div className='comment'>
-        <a href='/' className='avatar'>
-          <img alt='avatar' src={faker.image.avatar()} />
-        </a>
-        <div className='content'>
-          <a href='/' className='autho r'>
-            Sam
-          </a>
-          <div className='metadata'>
-            <span className='date'>Today at 6:00P.M</span>
-          </div>
-          <div className='text'>Nice blog post!</div>
-        </div>
-      </div>
-      <div className='comment'>
-        <a href='/' className='avatar'>
-          <img alt='avatar' src={faker.image.avatar()} />
-        </a>
-        <div className='content'>
-          <a href='/' className='autho r'>
-            Sam
-          </a>
-          <div className='metadata'>
-            <span className='date'>Today at 6:00P.M</span>
-          </div>
-          <div className='text'>Nice blog post!</div>
-        </div>
-      </div>
-      <div className='comment'>
-        <a href='/' className='avatar'>
-          <img alt='avatar' src={faker.image.avatar()} />
-        </a>
-        <div className='content'>
-          <a href='/' className='autho r'>
-            Sam
-          </a>
-          <div className='metadata'>
-            <span className='date'>Today at 6:00P.M</span>
-          </div>
-          <div className='text'>Nice blog post!</div>
-        </div>
-      </div>
+      <CommentDetail
+        author='Sam'
+        timeAgo='Today at 4:45PM'
+        content='I like the writing!'
+        avatar={faker.image.avatar()}
+      />
+      <CommentDetail
+        author='Alex'
+        timeAgo='Today at 2:00AM'
+        content='Nice blog post!'
+        avatar={faker.image.avatar()}
+      />
+      <CommentDetail
+        author='Jane'
+        timeAgo='Yesterday at 5:00PM'
+        content='I like the subject!'
+        avatar={faker.image.avatar()}
+      />
     </div>
   )
 }
