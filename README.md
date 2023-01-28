@@ -8,6 +8,9 @@ In the project directory, you can run:
 
 ### `npm start`
 
+
+![component reuse](https://user-images.githubusercontent.com/57706905/215272444-d76ff5ae-6b40-46ca-bbd3-04ca938fd31c.png)
+
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
